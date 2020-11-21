@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buscar usuario</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       	<div><h5>Buscar usuario</h5></div>
+        <form action='./buscaUsuario' method="POST">
+        {%csrf_token %}
+        <div>
+            <p>Identificador</p>
+	    <input name="id" type="text">
+        </div>
+        </form>
+    </body>
+</html>

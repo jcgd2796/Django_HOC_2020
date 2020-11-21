@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario HTML</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       	<div><h5>Formulario de datos del Usuario</h5></div>
+        <form action='./datosUsuario' method="POST">
+        {%csrf_token %}
+        <div>
+            <p>Nombre</p>
+	    <input name="nombre" type="text">
+            <p>Fecha de nacimiento</p>
+	    <input name="fechaN" type="date">
+            <p>Email</p>
+	    <input name="email" type="text">
+        </div>
+	<input text="enviar" type="submit">
+        </form>
+    </body>
+</html>
