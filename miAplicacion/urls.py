@@ -5,5 +5,7 @@ urlpatterns=[
         path('',views.index,name="Página principal"),
         path('registrarse',views.registrarse),
         path('datosUsuario',views.datosUsuario),
+        path('getUsuario',views.getUsuario),
+        path('buscaUsuario',views.buscarUsuario),
         ]
 
