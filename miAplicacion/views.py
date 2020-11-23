@@ -13,7 +13,7 @@ def datosUsuario(request):
     nombr = request.POST['nombre']
     em = request.POST['email']
     fn = request.POST['fechaN']
-    usuario = Usuario(nombre=nombr,fechaNacimiento=fn, email = em)
+    usuario = Usuario(nombre = nombr,fechaNacimiento = fn,email = em)
     usuario.save()
     return render(request,'miAplicacion/datosUsuario.html',{'name':nombr,'email':em,'date':fn})
 
