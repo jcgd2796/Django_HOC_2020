@@ -3,7 +3,8 @@ from django.http import HttpResponse
 from miAplicacion.models import Usuario
 
 def index(request):
-    return HttpResponse("Hello world")
+    context={}
+    return render(request,'miAplicacion/index.html',context)
 
 def registrarse(request):
     context={}
